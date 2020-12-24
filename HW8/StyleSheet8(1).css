@@ -1,0 +1,20 @@
+
+.A1 {
+    min-width: 200px;
+    max-width: 500px;
+    width: 100%;
+    min-height: 100px;
+    max-height: 250px;
+    background: yellow;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 20px auto;
+    padding: 20px;
+    color: white;
+    font-size: 11px;
+    box-sizing: border-box;
+}
+
+BODY, .html {
+    height: 100%;
+}

@@ -1,0 +1,40 @@
+.AA{
+    background-color:black;
+}
+.piramid {
+    height: 300px;
+}
+
+body.q3 {
+    background-color: skyblue;
+}
+
+.sky {
+    height: 100%;
+}
+
+.piramid {
+    /* margin-top: -300px; */
+}
+
+    .piramid div {
+        margin: 0 auto;
+        height: 100px;
+        background-color: sandybrown;
+    }
+
+.row-1 {
+    width: 100px;
+}
+
+.row-2 {
+    width: 200px;
+}
+
+.row-3 {
+    width: 300px;
+}
+
+BODY
+{
+}
