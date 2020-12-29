@@ -1,0 +1,293 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <table align="center">
+        <tr>
+            <td>
+
+                <h1>Character </h1>
+
+                <form method="get">
+                    <input name="search" />
+                    <button></button>
+                </form>
+
+                <br />
+                <hr /> <!--  горизонтальная линия -->
+                <br />
+
+                <form method="post">
+                    <!-- POST форма. Значения формы будут переданы в теле запроса. -->
+                    <input name="login" type="text" placeholder="Login" />
+                    <input name="password" type="password" placeholder="Password" />
+                    <button>Enter</button>
+                </form>
+
+                <br />
+                <hr />
+                <br />
+
+                <form method="post" enctype="multipart/form-data">
+                    <!-- POST форма. Значения формы будут переданы в теле запроса. -->
+                    <!-- multipart/form-data позволяет передавать файлы-->
+
+                    <div>
+                        <label>Name<input name="firstname" /></label>
+                        <label for="lastname">Sername </label><input id="lastname" name="lastname" />
+                    </div>
+                    <div>
+                        <label>Planet<input name="firstname" /></label>
+                        <label for="lastname">Name of planet </label><input id="lastname" name="lastname" />
+                    </div>
+
+                    <div>
+                        <label>Pet<input name="firstname" /></label>
+                        <label for="lastname">Pet's name </label><input id="lastname" name="lastname" />
+                    </div>
+                    <div>
+                        <label>Data<input name="firstname" /></label>
+                        <label for="lastname">Databirth</label><input id="lastname" name="lastname" />
+                    </div>
+
+                    <label>Character name <input disabled name="teacher" value="Andre" /></label>
+                    </div>
+
+                    <br />
+
+                    <div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="learn-html" value="true" />
+                                1
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="learn-css" value="true" />
+                                2
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="learn-js" value="true" />
+                                3
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input disabled type="checkbox" name="learn-csharp" value="true" />
+                                4
+                            </label>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        Операционная система:
+                        <div>
+                            <label>
+                                <input type="radio" name="os" value="windows" /> Windows
+                            </label>
+
+                            <label>
+                                <input type="radio" name="os" value="linux" /> Linux
+                            </label>
+
+                            <label>
+                                <input type="radio" name="os" value="macos" /> MacOS
+                            </label>
+
+                            <label>
+                                <input disabled type="radio" name="os" value="dos" /> DOS
+                            </label>
+                        </div>
+
+                        <br />
+                    </div>
+
+
+                    <div>
+                        Color of Ship
+                        <select name="select">
+                            <option value="">---</option>
+
+                            <optgroup label="IDE">
+                                <option>red</option>
+                                <option>blue</option>
+                                <option>green</option>
+                                <option disabled>I don't care</option>
+                            </optgroup>
+
+                            <optgroup label="I don't care with second power">
+                                <option selected="selected">perple</option>
+                                <option>gray</option>
+                                <option>Random</option>
+                            </optgroup>
+
+                            <optgroup disabled label="Another">
+                                <option>Random</option>
+                                <option>Not Random</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        Intelegent
+                        <select name="select">
+                            <option value="">---</option>
+
+                            <optgroup label="IDE">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option disabled>4</option>
+                            </optgroup>
+
+                            <optgroup label="5">
+                                <option selected="selected">6</option>
+                                <option>7</option>
+                                <option>8</option>
+                            </optgroup>
+
+                            <optgroup disabled label="9">
+                                <option>10</option>
+                                <option>11</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        constitution
+                        <select name="select">
+                            <option value="">---</option>
+
+                            <optgroup label="IDE">
+                                <option>Normal</option>
+                                <option>Strong</option>
+                                <option>Weak</option>
+                                <option disabled>Random</option>
+                            </optgroup>                  
+                        </select>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        Примеры работ
+                        <input name="examples" type="file" multiple />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        О себе
+                        <textarea rows="5" cols="55" name="about">
+dgddgdgg
+              </textarea>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <button type="submit">
+                            <img src="send.svg" width="16" /> <i>Отправить</i>
+                        </button>
+
+                        <button type="reset">
+                            <i>Очистить</i>
+                        </button>
+
+                        <button type="button" disabled>
+                            Не отправлять
+                        </button>
+                    </div>
+                </form>
+
+                <br />
+                <hr />
+                <br />
+
+
+                <form>
+                    <h2>Some information about your character</h2>
+
+                    <div>
+                       Character
+                        <input type="hidden" value="123" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                     date and time
+                        <input type="date" name="date" />
+                        <input type="datetime-local" name="dateеime" />
+                        <input type="time" name="time" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        Email 
+                        <input type="email" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                       Telephone number
+                        <input type="tel" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        Url 
+                        <input type="url" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                       Search
+                        <input type="search" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        Color
+                        <input type="color" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                 Number
+                        <input type="number" />
+                        <input type="number" min="1" max="100" />
+                        <input type="number" min="1" max="100" step="5" />
+                        <input type="range" min="1" max="100" value="80" />
+                    </div>
+
+                    <br />
+
+                  
+                    <div>
+                        <button type="submit">Sent</button>
+                    </div>
+
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+</BODY>
+</HTML>
