@@ -1,0 +1,166 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+  .block1,.block2,.block3 {
+     
+    }
+    html{
+        height:100%;
+    }
+    body {
+        display: flex;
+        min-height: 100%;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+    }
+    .block1 {
+        background-color: red;
+       
+        flex:0 0 200px;
+    }
+
+    .block3 {
+        background-color: blue;
+        flex: 0 0 0 auto;
+     
+     
+
+    }
+    .side {
+        flex: 0 0 300px;
+        background-color: black;
+    }
+    .main {
+        flex: 1 1 0;
+        background-color: purple;
+    }
+    .block2 {
+        flex: 1 1 300px;
+        background-color: green;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: flex-start;
+       
+    }
+    .item {
+        /* flex-grow:1;
+        flex-shrink:1;
+        flex-basis:200px;*/
+        flex: 1 2 auto;
+        background-color: yellow;
+        border: 2px solid black;
+        width:200px;
+        /*width: 40%;*/
+    }
+    #navbar ul {
+        display: none;
+        background-color: #BA55D3;
+        position: absolute;
+        top: 100%;
+    }
+
+    #navbar li:hover ul {
+        display: block;
+    }
+
+    #navbar, #navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #navbar {
+        height: 30px;
+        background-color: #666;
+        padding-left: 25px;
+        min-width: 470px;
+    }
+
+        #navbar li {
+            float: left;
+            position: relative;
+            height: 100%;
+        }
+
+            #navbar li a {
+                display: block;
+                padding: 6px;
+                width: 100px;
+                color: #000000;
+                text-decoration: none;
+                text-align: center;
+            }
+
+        #navbar ul li {
+            float: none;
+        }
+        ы
+        #navbar li:hover {
+            background-color: #483D8B;
+        }
+
+        #navbar ul li:hover {
+            background-color: #00FFFF;
+        }
+      
+</style>
+
+<BODY>
+    <ul id="navbar">
+        <li>
+            <a href="#">Главная</a>
+            <ul>
+                <li><a href="#">Адрес</a></li>
+                <li><a href="#">Телефон</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Новости</a>
+            <ul>
+                <li><a href="#">Адрес</a></li>
+                <li><a href="#">Телефон</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        <li><a href="#">Телефон</a>
+         <ul>
+                <li><a href="#">Адрес</a></li>
+                <li><a href="#">Телефон</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </li>
+        </li>
+        <li>
+            <a href="#">Контакты</a>
+            <ul>
+                <li><a href="#">Адрес</a></li>
+                <li><a href="#">Телефон</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+
+
+    <div class="block1"></div>
+    <div class="block2">
+        <div class="side">
+            <div class="main"></div>
+        </div>
+    </div>
+    <div class="block3"></div>
+
+</BODY>
+</HTML>
