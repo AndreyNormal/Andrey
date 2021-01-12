@@ -1,0 +1,321 @@
+<HTML>
+<HEAD>
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <TITLE></TITLE>
+</HEAD>
+<style>
+
+    body,html{
+        width:100%;
+        height:100%;
+        background-color:mistyrose;
+
+   display:flex;
+   margin:auto;
+   justify-content:center;
+   flex-direction:column;
+   align-items:center;
+        }
+    .regist,.creat,.generat{
+        display:flex;
+        flex-direction:column;
+        border:5px solid black;
+        flex-wrap:nowrap;
+
+
+    }
+    .row{
+        display:flex;
+        flex-direction:row;
+        border:solid 5px black;
+        margin:auto;
+        flex-wrap:nowrap;
+
+    }
+    .first{
+        border:2px solid black;
+        color:blue;
+        flex:100px;
+    }
+
+</style>
+<BODY>
+ 
+        <table align="center">
+            <tr>
+                <td>
+                    <br />
+                    <hr />
+                    <br />
+                    <h1>Information </h1>
+
+                    <form method="get">
+                        <input name="search" />
+                        <button></button>
+                    </form>
+
+                    <br />
+                    <hr />
+                    <br />
+
+                    <form method="post">
+
+                        <input name="login" type="text" placeholder="Login" />
+                        <input name="password" type="password" placeholder="Password" />
+                        <button>Enter</button>
+                    </form>
+
+                    <br />
+                    <hr />
+                    <br />
+                    <div class="regist">
+                        <form method="post" enctype="multipart/form-data">
+
+
+                            <div>
+                                <label>Name<input name="firstname" /></label>
+                                <label for="lastname">Sername </label><input id="lastname" name="lastname" />
+                            </div>
+                            <div>
+                                <label>Planet<input name="firstname" /></label>
+                                <label for="lastname">Name of planet </label><input id="lastname" name="lastname" />
+                            </div>
+
+                            <div>
+                                <label>Pet<input name="firstname" /></label>
+                                <label for="lastname">Pet's name </label><input id="lastname" name="lastname" />
+                            </div>
+                            <div>
+                                <label>Data<input name="firstname" /></label>
+                                <label for="lastname">Databirth</label><input id="lastname" name="lastname" />
+                            </div>
+
+                            <label>Character name <input disabled name="teacher" value="Andre" /></label>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        Lives
+                        <div>
+                         
+                            <label>
+                                <input type="checkbox" name="learn-html" value="true" />
+                                1
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="learn-css" value="true" />
+                                2
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="learn-js" value="true" />
+                                3
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input disabled type="checkbox" name="learn-csharp" value="true" />
+                                4
+                            </label>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        inventar
+                        <div>
+                            <label>
+                                <input type="radio" name="os" value="windows" /> knife
+                            </label>
+
+                            <label>
+                                <input type="radio" name="os" value="linux" />pistol
+                            </label>
+
+                            <label>
+                                <input type="radio" name="os" value="macos" /> phone
+                            </label>
+
+                            <label>
+                                <input disabled type="radio" name="os" value="dos" /> Random
+                            </label>
+                        </div>
+
+                        <br />
+                    </div>
+                    <div>
+                        Music
+                        <input type="range" min="1" max="100" value="80" />
+                    </div>
+                    <div>
+
+
+                        Color of ship
+                        <input type="color" />
+                    </div>
+
+
+                    </div>
+                    <div>
+                        Intelegent
+                        <select name="select">
+
+                            <option value="">---</option>
+
+                            <optgroup label="IDE">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                            </optgroup>
+
+
+                        </select>
+                    </div>
+                    <div>
+                        constitution
+                        <select name="select">
+                            <option value="">---</option>
+
+                            <optgroup label="IDE">
+                                <option>Normal</option>
+                                <option>Strong</option>
+                                <option>Weak</option>
+                                <option disabled>Random</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        Примеры работ
+                        <input name="examples" type="file" multiple />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        О себе
+                        <textarea rows="5" cols="55" name="about">
+dgddgdgg
+              </textarea>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <button type="submit">
+                            <img src="send.svg" width="16" /> <i>Отправить</i>
+                        </button>
+
+                        <button type="reset">
+                            <i>Очистить</i>
+                        </button>
+
+                        <button type="button" disabled>
+                            Не отправлять
+                        </button>
+                    </div>
+                    </form>
+                    <div>
+                        <br />
+
+
+                        <div class="creat">
+                            <form>
+                                <h2>Some information about you</h2>
+
+                                <div>
+
+                                    <input type="hidden" value="123" />
+                                </div>
+
+                                <br />
+
+                                <div>
+                                    date and time
+                                    <input type="date" name="date" />
+                                    <input type="datetime-local" name="dateеime" />
+                                    <input type="time" name="time" />
+                                </div>
+
+                                <br />
+
+                                <div>
+                                    Email
+                                    <input type="email" />
+                                </div>
+
+                                <br />
+
+                                <div>
+                                    Telephone number
+                                    <input type="tel" />
+                                </div>
+
+                                <br />
+
+                                <div>
+                                    Url
+                                    <input type="url" />
+                                </div>
+
+                                <br />
+
+                                <div>
+                                    Search
+                                    <input type="search" />
+                                </div>
+
+
+
+
+
+                                <br />
+
+                                <div>
+                                    Number
+                                    <input type="number" />
+                                    <input type="number" min="1" max="100" />
+                                    <input type="number" min="1" max="100" step="5" />
+
+                                </div>
+
+                                <br />
+
+
+                                <div>
+                                    <button type="submit">Sent</button>
+                                </div>
+
+                            </form>
+                </td>
+            </tr>
+            </table>
+        </div>
+        <button id="roll">generatel</button>
+        </form>
+    </div>
+</BODY>
+</HTML>
