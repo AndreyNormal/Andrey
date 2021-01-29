@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+
+.page {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+  justify-content: flex-start;
+
+  font: 300 16px Roboto, sans-serif;
+  
+  background-color: hsl(0, 0%, 95%);
+}
+
+  .page__header {
+    flex: 0 0 auto;
+  }
+
+.fancy-border {
+  background: linear-gradient(to right, red, blue);
+  background-clip: border-box;
+  padding: 5px;
+}
+
+.header {
+  /* background-color: hsl(180, 20%, 70%); */
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 25px;
+}
+
+  .header__logo {
+    /*flex: 0 1 auto;*/
+
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: 800;
+    color: hsl(0, 0%, 10%);
+  }
+
+  .header__status {
+    color: hsl(230, 20%, 40%);
+    text-transform: uppercase;
+    padding: 0 25px;
+  }
+
+  .header__nav {
+    align-self: stretch;
+  }
+
+  .header__space {
+    flex: 1 0 0;
+    /* height: 1px;
+    background-color: blue; */
+  }
+
+  .header_logo-left {
+    flex-direction: row;
+  }
+/* 
+    .header_logo-left .header__nav {
+      margin-left: auto;
+    } */
+
+  .header_logo-right {
+    flex-direction: row-reverse;
+  }
+/* 
+  
+    .header_logo-right .header__nav {
+      margin-right: auto;
+    } */
+
+  .header_logo-center {
+    
+  }
+
+
+
+.page__body {
+  flex: 1 0 auto;
+}
+
+.body {
+
+}
+
+.footer, .header {
+  background-color: hsl(230, 20%, 70%);
+}
+
+
+.footer {
+  /* background-color: hsl(180, 20%, 70%); */
+}
+
+.footer__nav {
+  padding: 20px;
+}
+
+
+/* 
+.nav {
+} */
+
+.nav_horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+
+.nav_vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.nav__item {
+}
+
+  .nav__item_horizontal {
+    padding: 0 20px;
+  }
+
+  .nav__item_vertical {
+    padding: 10px 0 0;
+  }
+
+.nav__link {
+  color: hsl(0, 0%, 10%);
+  text-decoration: none;
+  font-weight: 500;
+  
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 4px solid;
+
+  height: 100%;
+}
+
+  .nav__link_default {
+    border-bottom-color: transparent;
+  }
+
+  .nav__link_selected {
+    border-bottom-color: #064c5c;
+  }
+
+  .nav__link:hover {
+    border-bottom-color: #b64c5c;
+  }
+
+
+.nav {
+
+}
+
+.header .nav {
+
+
+}
+
+
+.footer .nav {
+
+}
