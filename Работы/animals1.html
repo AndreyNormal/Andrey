@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font: 300 18px Roboto, sans-serif;
+    }
+
+    .messages {
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+    }
+
+    .message {
+      position: relative;
+      display: flex;
+      background-color: hsl(0, 0%, 93%);
+      margin-bottom: 30px;
+    }
+
+    .message::after {
+      content: '';
+      display: block;
+      position: absolute;
+      /* background-color: hsl(0, 0%, 93%); */
+      /* width: 15px;
+      height: 15px; */
+      bottom: -14px;
+
+
+      border: 7px solid;
+      /* border-width: 20px 40px; */
+    }
+
+    .avatar {
+      flex: 0 0 auto;
+      padding: 20px;
+    }
+
+    .avatar img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .text {
+      padding: 20px;
+      align-self: center;
+      line-height: 1.5;
+    }
+
+    .ltr {
+      margin-right: 60px;
+      align-self: flex-start;
+    }
+      .ltr .text {
+        padding-left: 0px;
+      }
+
+      .ltr::after {
+        left: 0;
+        
+        border-left-color: hsl(0, 0%, 93%);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-top-color: hsl(0, 0%, 93%);
+      }
+
+
+    .rtl {
+      flex-direction: row-reverse;
+      margin-left: 60px;
+      align-self: flex-end;
+    }
+      .rtl .text {
+        padding-right: 0px;
+      }
+
+      .rtl::after {
+        right: 0;
+        
+        border-left-color:transparent;
+        border-right-color:  hsl(0, 0%, 93%);
+        border-bottom-color: transparent;
+        border-top-color: hsl(0, 0%, 93%);
+      }
+
+
+
+    b {
+      font-weight: 400;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="messages">
+
+    <div class="message ltr">
+      <div class="avatar"><img src="fennec.jpg" alt=""></div>
+      <div class="text">Привет!</div>
+    </div>
+
+    <div class="message ltr">
+      <div class="avatar"><img src="fennec.jpg" alt=""></div>
+      <div class="text">Я <b>фенек</b> — миниатюрная лисица с крупными относительно тела ушами, которая живёт в пустынях Северной Африки. Иногда её относят к особому роду Fennecus. Своё имя этот зверёк получил от арабского слова فَنَك‎‎ (фанак), что на одном из разговорных диалектов означает «лиса».</div>
+    </div>
+
+    <div class="message rtl">
+      <div class="avatar"><img src="tucan.jpg" alt=""></div>
+      <div class="text">Привет! А я <b>Радужный тукан</b></div>
+    </div>
+
+    <div class="message rtl">
+      <div class="avatar"><img src="tucan.jpg" alt=""></div>
+      <div class="text">Имеею большой полый клюв, достигающий 17 см в длину. Окрас клюва зелёный, с голубыми вкраплениями в нижней части и с оранжевой полосой сбоку. Оперение на спине, животе, и верхней части крыльев чёрное матовое, на верхней части шеи — чёрное с красным отливом. Грудь и щеки жёлто-лимонного оттенка, нижняя часть хвоста — ярко-красная.</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
